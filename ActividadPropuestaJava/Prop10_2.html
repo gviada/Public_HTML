@@ -1,0 +1,60 @@
+<html>
+<head>
+
+	<title>
+	Propuesta 10-2
+	</title>
+
+	<script type="text/javascript">
+		
+		//variables
+		var aritmetica;
+		var total;
+		var numero1;
+		var numero2;
+		var suma;
+		var resta;
+		var multi;
+		var div;
+
+		//var nota2 = parseInt(prompt("Teclea la segunda nota: ", 0));
+		
+		//Insertar Numeros
+		
+		numero1 = parseInt(prompt("Teclea un numero: ", 0));
+		aritmetica = prompt("Teclea un simbolo de operaciones: ");
+		numero2 = parseInt(prompt("Teclea el segundo numero: ", 0));
+		
+		//aritmetica
+		
+		suma = numero1+numero2;
+		resta = numero1-numero2;
+		multi = numero1*numero2;
+		div = numero1/numero2;
+		
+		
+		//Logica
+		
+		
+		
+		//Estructuras de control
+		
+		switch(aritmetica){
+			
+			case "+": total = suma; break;
+			case "-": total = resta; break;
+			case "*": total = multi; break;
+			case "/": total = div; break;
+			default: total = "El numero insertado es erroneo";
+		};
+		
+		//Display
+		
+		alert(total);
+		
+		
+	</script>
+	
+</head>
+
+<body>

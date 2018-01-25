@@ -1,0 +1,55 @@
+<html>
+<head>
+
+    <title>
+        Propuesta 13-4
+    </title>
+
+    <script type="text/javascript">
+
+
+        var num = 14, suma = 0, cuenta=0, alumno;
+
+
+        do {
+
+            if (num >= 13 && num <= 100)
+
+            {
+
+                alumno = prompt("Introduzca el nombre del alumno: ");
+                num = parseInt(prompt("Introduzca la edad: ", 0));
+                suma = suma + num;
+                cuenta = cuenta + 1;
+                document.write("El nombre del Alumno es: " + alumno + ".<br>");
+                document.write("La edad de " + alumno + " es: " + num + ".<br><br>");
+            }
+
+            else
+
+            {
+
+                num = parseInt(prompt("La edad introducida no entra en el rango aceptable (13-100). Introduzca una edad aceptable: "));
+
+            }
+
+        }
+
+        while (cuenta < 3);
+
+        if (cuenta > 0){
+
+            media = suma / cuenta;
+        }
+        else{
+
+            media = 0;
+        }
+
+        document.write("<h3>La media de las edades es: " + media + "</h3>");
+
+    </script>
+
+</head>
+
+</html>

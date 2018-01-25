@@ -1,0 +1,44 @@
+<html>
+<head>
+
+    <title>
+        Propuesta 13-1
+    </title>
+
+    <script type="text/javascript">
+
+
+        var num, suma = 0, cuenta=0, media;
+        num = parseInt(prompt("Introduce un número (cero para finalizar): ", 0));
+
+        do
+
+        {
+
+            suma = suma + num;
+            cuenta = cuenta + 1;
+            num = parseInt(prompt("Introduce un número (cero para finalizar): ", 0));
+
+        }
+
+        while (num !=0)
+
+        document.write("<h3>La suma de los numeros es:" + suma + "</h3>");
+        document.write("<h3>El número de números leídos es:" + cuenta + "</h3>");
+
+        if (cuenta > 0){
+
+            media = suma / cuenta;
+        }
+        else{
+
+            media = 0;
+        }
+
+        document.write("<h3>La media de los numeros es: " + media + "</h3>");
+
+    </script>
+
+</head>
+
+<body>

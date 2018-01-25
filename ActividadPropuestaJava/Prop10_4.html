@@ -1,0 +1,82 @@
+<html>
+<head>
+
+	<title>
+	Propuesta 10-4
+	</title>
+
+	<script type="text/javascript">
+		
+		//variables
+		var Emp;
+		var Sal;
+		var Dep;
+        var sub1;
+        var sub2;
+        var sub3;
+        var exit;
+        var sub0;
+        var subs;
+		
+		//Insertar
+
+        Emp = prompt("Teclea el nombre del Empleado");
+        Sal = parseInt(prompt("Teclea el salario", 0));
+		Dep = parseInt(prompt("Teclea el numero de Departamento: ", 0));
+
+
+
+
+		//aritmetica
+
+        sub1 = 100;
+        sub2 = 0.05*Sal;
+        sub3 = 0.04*Sal;
+        sub0 = 75;
+
+
+		//Logica
+		
+		
+		
+		//Estructuras de control
+
+
+
+		switch(Dep){
+			
+			case 10: exit = sub1+Sal; break;
+			case 20: exit = sub2+Sal; break;
+			case 30: exit = sub3+Sal; break;
+            default: exit = sub0+Sal;
+
+		};
+
+		switch(Dep){
+
+            case 10: subs = sub1; break;
+            case 20: subs = sub2; break;
+            case 30: subs = sub3; break;
+            default: subs = sub0;
+
+        };
+
+		
+		//Display
+
+
+        document.write(Emp + ", su salario va a subir.");
+        document.write("<br>Nombre del Empleado: " + Emp);
+        document.write("<br>Salario actual: " + Sal);
+        document.write("<br>Numero de Departamento: " + Dep);
+        document.write("<br>Su salario va a subir en: " + subs);
+        document.write("<br>Salario tras el cambio: " + exit);
+
+
+		
+		
+	</script>
+	
+</head>
+
+<body>

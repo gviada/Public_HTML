@@ -1,0 +1,34 @@
+<html>
+<head>
+
+    <title>
+        Propuesta 12-2
+    </title>
+
+    <script type="text/javascript">
+
+        var num;
+        do
+        {
+
+            num = prompt("Introduce el numero a añadir: ");
+            if (num !== 0){
+
+                document.write("<br> --> " + num)
+                //Si se entra en bucle es porque la nota no es correcta
+                //Con lo cual hay que leer de nuevo hasta que sea correcta.
+                num = parseInt(prompt("Introduce el numero a listar: ", 0));
+
+            }
+
+        }
+
+        while (num !== 0);
+
+        alert("Done");
+    </script>
+
+
+</head>
+
+<body>

@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+
+	<title>
+	Propuesta 8-2
+	</title>
+
+	<script type="text/javascript">
+		
+		//variables
+		var name = prompt("Teclea el nombre del alumno: ");
+		var age =  prompt("Teclea la edad del alumno: ");
+		var nota1 = parseInt(prompt("Teclea la primera nota: ", 0));
+		var nota2 = parseInt(prompt("Teclea la segunda nota: ", 0));
+		var media;
+		
+		//var mediainfo = ;
+		
+		//Insertar Numeros
+		
+		
+		
+		//aritmetica
+		
+		media = ((nota1+nota2)/2);
+		
+		//Logica
+		
+		
+		
+		//Estructuras de control
+			//alumno
+			
+			if (media >= 5 && age >= 18)
+			{
+				//mayor de edad y aprobado
+				document.write("<h3>INFORMACIÓN DEL ALUMNO</h3>");
+				document.write("NOMBRE DEL ALUMNO: " + name + "<br>EDAD DEL ALUMNO: " + age + "<br>MAYOR DE EDAD: Si");
+				document.write("<h3>NOTAS</h3>" + "<br>Primera nota: " + nota1 + "<br>Segunda nota: " + nota2 + "<br>Media: " + media + "<br>Has Aprobado!");
+				
+			}
+			else if (media >= 5 && age < 18)
+			{
+				//menor de edad y aprobado
+				document.write("<h3>INFORMACIÓN DEL ALUMNO</h3>");
+				document.write("NOMBRE DEL ALUMNO: " + name + "<br>EDAD DEL ALUMNO: " + age + "<br>MAYOR DE EDAD: No");
+				document.write("<h3>NOTAS</h3>" + "<br>Primera nota: " + nota1 + "<br>Segunda nota: " + nota2 + "<br>Media: " + media + "<br>Has Aprobado!");
+			}
+            else if
+		 (media < 5 && age >= 18)
+			{
+				//mayor de edad y suspendido
+				document.write("<h3>INFORMACIÓN DEL ALUMNO</h3>");
+				document.write("NOMBRE DEL ALUMNO: " + name + "<br>EDAD DEL ALUMNO: " + age + "<br>MAYOR DE EDAD: Si");
+				document.write("<h3>NOTAS</h3>" + "<br>Primera nota: " + nota1 + "<br>Segunda nota: " + nota2 + "<br>Media: " + media + "<br>Pah Septiembre!");
+			}
+			
+			else if (media < 5 && age < 18)
+			{
+				//menor de edad y suspendido
+				document.write("<h3>INFORMACIÓN DEL ALUMNO</h3>");
+				document.write("NOMBRE DEL ALUMNO: " + name + "<br>EDAD DEL ALUMNO: " + age + "<br>MAYOR DE EDAD: No");
+				document.write("<h3>NOTAS</h3>" + "<br>Primera nota: " + nota1 + "<br>Segunda nota: " + nota2 + "<br>Media: " + media + "<br>pah Septiembre!");
+			}
+			
+			else 
+			{
+				//error alert
+				alert("Has escrito algun dato mal");
+			}
+
+		//Display
+		
+		
+		
+		
+	</script>
+	
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <title>
+        Propuesta 13-6
+    </title>
+
+    <script type="text/javascript">
+
+
+        var num, suma = 0, cuenta = 3, alumno, sexo, media, hsexocount = 0, msexocount = 0;
+
+        //(num >= 13 && num <= 100 && sexo == "h" && sexo == "H" && sexo == "M" && sexo == "m")
+        //suma = suma + num;
+        //cuenta = cuenta + 1;
+        //document.write("El nombre del Alumno es: " + alumno + ".<br>");
+        //document.write("La edad de " + alumno + " es: " + num + ".<br>");
+        //document.write("El alumno es: " + sexo + ".<br><br>");
+
+        do
+
+        {
+            alumno = prompt("Introduzca el nombre del alumno: ");
+            document.write("El nombre del Alumno es: " + alumno + ".<br>");
+            cuenta = cuenta - 1;
+
+            do {
+                num = parseInt(prompt("Introduzca la edad: "));
+
+
+                if ((num < 13) || (num > 100)) {
+
+                    alert("La edad introducida no entra en el rango aceptable (13-100). Introduzca una edad aceptable: ");
+
+                }
+
+                else {
+                    document.write("La edad de " + alumno + " es: " + num + ".<br>");
+                    suma = suma + num;
+                }
+
+            }
+            while(num < 13 || num > 100);
+
+            do{
+
+                sexo = prompt("Introduzca el sexo del alumno: ");
+
+                switch(sexo){
+
+                    case "h": document.write("El alumno, " + alumno + ", es Hombre."); hsexocount = hsexocount + 1; break;
+                    case "H": document.write("El alumno, " + alumno + ", es Hombre."); hsexocount = hsexocount + 1; break;
+                    case "m": document.write("El alumno, " + alumno + ", es Mujer."); msexocount = msexocount + 1; break;
+                    case "M": document.write("El alumno, " + alumno + ", es Mujer."); msexocount = msexocount + 1; break;
+                    default: alert("El sexo introducido no es correcto, introduzca uno correcto: ");
+
+                }
+
+            }
+            while(sexo !== "h" && sexo !== "H" && sexo !== "m" && sexo !== "M");
+            document.write("<br><br>");
+        }
+
+
+        while(cuenta !== 0);
+
+
+
+        media = suma / 3;
+
+
+        document.write("<h3>La media de las edades es: " + media + "</h3><br>");
+        document.write("<h3>Hay " + hsexocount + " hombres, y " + msexocount + " mujeres.</h3>");
+
+    </script>
+
+</head>
+
+</html>

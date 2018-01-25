@@ -1,0 +1,63 @@
+<html>
+<head>
+<body>
+    <title>
+        Propuesta 11-1
+    </title>
+
+    <script type="text/javascript">
+
+        //variables
+        var sexo;
+
+        //Insertar Numeros
+
+        sexo = prompt("Introduzca el sexo: ");
+
+
+        //aritmetica
+
+
+
+        //Logica
+
+
+
+        //Estructuras de control
+
+        while (sexo !== "h" && sexo !== "H" && sexo !== "m" && sexo !== "M")
+        {
+
+            //Si se entra en bucle es porque la nota no es correcta
+            //Con lo cual hay que leer de nuevo hasta que sea correcta.
+            alert("Sexo erronea: " + sexo +". Teclea de nuevo.");
+            sexo = prompt("Introduce el sexo correcto: ");
+
+
+        };
+
+
+        //apartir de aqui es display de la nota correcta
+
+
+        //Display
+        if (sexo=="h" ||sexo=="H") {
+
+            document.write("El sexo " + sexo + " es correcto. Es Hombre");
+        }
+
+        else if (sexo=="m" || sexo=="M") {
+
+
+            document.write("El sexo " + sexo + " Es correcto. Es Mujer");
+        }
+
+    </script>
+
+</head>
+
+
+
+</body>
+
+</html>

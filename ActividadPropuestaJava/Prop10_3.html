@@ -1,0 +1,96 @@
+<html>
+<head>
+
+	<title>
+	Propuesta 10-3
+	</title>
+
+	<script type="text/javascript">
+		
+		//variables
+		var mes;
+		var nmes;
+		var prod;
+		var prodbase;
+		var prod1;
+		var prod2;
+		var prod3;
+		var prod4;
+		var prod0;
+
+		//var nota2 = parseInt(prompt("Teclea la segunda nota: ", 0));
+		
+		//Insertar Numeros
+		
+		mes = parseInt(prompt("Teclea un numero de mes: ", 0));
+		
+		//aritmetica
+
+        prodbase = 100;
+        prod1 = 15;
+        prod2 = 17;
+        prod3 = 20;
+        prod4 = 21;
+        prod0 = 0;
+		//Logica
+		
+		
+		
+		//Estructuras de control
+
+
+
+		switch(mes){
+			
+			case 1: nmes = "Enero"; break;
+			case 2: nmes = "Febrero"; break;
+			case 3: nmes = "Marzo"; break;
+			case 4: nmes = "Abril"; break;
+			case 5: nmes = "Mayo"; break;
+			case 6: nmes = "Junio"; break;
+			case 7: nmes = "Julio"; break;
+			case 8: nmes = "Agosto"; break;
+			case 9: nmes = "Septiembre"; break;
+			case 10: nmes = "Octubre"; break;
+			case 11: nmes = "Noviembre"; break;
+			case 12: nmes = "Diciembre"; break;
+			default: nmes = "Error en el mes";
+		};
+
+		switch(mes){
+
+            case 1: prod = prodbase+prod1; break;
+            case 2: prod = prodbase+prod1; break;
+            case 3: prod = prodbase+prod1; break;
+            case 4: prod = prodbase+prod2; break;
+            case 5: prod = prodbase+prod2; break;
+            case 6: prod = prodbase+prod2; break;
+            case 7: prod = prodbase+prod0; break;
+            case 8: prod = prodbase+prod0; break;
+            case 9: prod = prodbase+prod3; break;
+            case 10: prod = prodbase+prod3; break;
+            case 11: prod = prodbase+prod3; break;
+            case 12: prod = prodbase+prod4; break;
+            default: prod = "Error en el mes";
+        };
+		
+		//Display
+		if (mes > 12 || mes < 1)
+		{
+            alert("Error en el mes")
+        }
+
+        else
+		{
+		    alert("La productividad del mes: " + nmes + " ha sido de: " + prod);
+
+		}
+
+
+		
+		
+	</script>
+	
+</head>
+
+<body>

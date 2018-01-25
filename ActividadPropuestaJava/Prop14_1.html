@@ -1,0 +1,29 @@
+<html>
+<head>
+
+    <title>
+        Propuesta 14-1-2
+    </title>
+
+    <script type="text/javascript">
+
+        var num = 0, fact = 1;
+        num = parseInt(prompt("Introduce un numero: ", 0));
+        document.write("<h2>TABLA DE MULTIPLICAR DE " + num + "</h2><br>");
+        document.write(" <table border=1> <tr bgcolor='yellow'><th>NUMERO</th> <th>FACTOR</th><th>RESULTADO</th></tr>");
+        for (i = 1; i <= 10; i = i + 1)
+        {
+
+            fact = num * i;
+
+           document.write("<tr><td>" + num + "</td> <td>" + i + "</td><td>" + fact + "</td></tr>");
+
+        }
+
+        document.write("</table>");
+
+    </script>
+
+</head>
+
+</html>

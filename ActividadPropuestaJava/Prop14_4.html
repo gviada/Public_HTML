@@ -1,0 +1,133 @@
+<html>
+<head>
+
+    <title>
+        Propuesta 14-4
+    </title>
+
+    <script type="text/javascript">
+
+
+        var edad = 0, medad = 0, redad = 0, alumno, sexo, hsexocount = 0, msexocount = 0, nota = 0, mnota = 0, rnota = 0;
+
+        //(num >= 13 && num <= 100 && sexo == "h" && sexo == "H" && sexo == "M" && sexo == "m")
+        //suma = suma + num;
+        //cuenta = cuenta + 1;
+        //document.write("El nombre del Alumno es: " + alumno + ".<br>");
+        //document.write("La edad de " + alumno + " es: " + num + ".<br>");
+        //document.write("El alumno es: " + sexo + ".<br><br>");
+
+
+        document.write("<center><h2>TABLA DE ALUMNOS</h2><br>");
+        document.write(" <table border=1> <tr bgcolor='red'><th>ALUMNOS</th> <th>EDAD</th><th>SEXO</th><th>NOTA</th></tr>");
+
+        for (i = 1; i <= 2; i = i + 1)
+
+        {
+            alumno = prompt("Introduzca el nombre del alumno: ");
+
+            //Comprueba la Edad do...while
+
+            do {
+                edad = parseInt(prompt("Introduzca la edad: "));
+
+
+
+                if ((edad < 13) || (edad > 100)) {
+
+                    alert("La edad introducida no entra en el rango aceptable (13-100). Introduzca una edad aceptable: ");
+
+
+                }
+
+                else {
+                    medad = medad + edad;
+                }
+
+            }
+            while(edad < 13 || edad > 100);
+
+            //Comprueba el sexo do...while
+
+            do{
+
+                sexo = prompt("Introduzca el sexo del alumno(h/H para hombre, m/M para mujer): ");
+
+                switch(sexo){
+
+                    case "h": sexo = "Hombre"; hsexocount = hsexocount + 1; break;
+                    case "H": sexo = "Hombre"; hsexocount = hsexocount + 1; break;
+                    case "m": sexo = "Mujer"; msexocount = msexocount + 1; break;
+                    case "M": sexo = "Mujer"; msexocount = msexocount + 1; break;
+                    default: alert("El sexo introducido no es correcto, introduzca uno correcto: ");
+
+                }
+
+            }
+            while(sexo !== "Hombre" && sexo !== "Mujer");
+
+            //Comprueba la nota do...while
+
+            do{
+
+                nota = parseInt(prompt("Introduzca la nota del alumno: "));
+
+
+                if (nota < 0 || nota > 10){
+
+                    alert("La nota introducida no es valida.(0-10)");
+
+                }
+
+                else{
+
+                    mnota = nota + mnota;
+
+                }
+
+            }
+            while(nota < 0 || nota > 10);
+
+            //Display
+
+            if (sexo === "Hombre") {
+
+                document.write("<tr bgcolor='#6495ed'><td>" + alumno + "</td> <td>" + edad + "</td><td>" + sexo + "</td> <td>" + nota + "</td></tr>");
+
+            }
+
+            else if (sexo === "Mujer") {
+
+                document.write("<tr bgcolor='#228b22'><td>" + alumno + "</td> <td>" + edad + "</td><td>" + sexo + "</td> <td>" + nota + "</td></tr>");
+
+            }
+
+            else
+            {
+
+
+        }
+
+
+
+        }
+
+        document.write("</table>");
+
+        rnota = mnota / (i-1);
+
+        redad = medad / (i-1);
+
+        //Display despues de la tabla
+
+        document.write("<hr><h2>ESTADISTICA</h2>");
+        document.write("<h3>La media de las edades es: " + redad + "</h3><br>");
+        document.write("<h3>Hay " + hsexocount + " hombres, y " + msexocount + " mujeres.</h3><br>");
+        document.write("<h3>La nota media de los alumnos es: " + rnota + "</h3><br>");
+        document.write("</center>");
+
+    </script>
+
+</head>
+
+</html>
