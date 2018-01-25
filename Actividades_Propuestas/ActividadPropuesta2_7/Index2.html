@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Actividad Propuesta 2-7-2 -->
+	<head>
+		<title>Actividad Propuesta 2-7-2</title>
+	
+	<style type="text/css">
+	
+	h2 {
+		color: red;
+	
+	}
+	
+	p {
+		color: blue;
+	
+	}
+	
+	</style>
+	
+	</head>
+
+	<body>
+		
+		<h1 align="center"> DATOS DE ALUMNOS- CONTINUACIÓN </h1>
+		
+		<table align="center" border="" cellpadding="">
+		
+			<tr>
+				<td bgcolor="pink">
+					<form action=""> <!-- action="blank". No hay que poner nada aqui dentro, porque eso es lo que se rellena con <p> -->
+						
+						<h2 align="center">Teclea más datos </h2>
+						
+						<p><!-- Aqui vas poniendo las partes que quieras añadir -->
+				
+							Teclea fecha de nacimiento:<br><br>
+							Teclea dia de nacimiento..:<input type="text" name="dia_nac" size="4" maxlength="2"> 
+							Selecciona mes de nacimiento..:
+							<select name="meses_nac">
+								<option value="Enero">Enero
+								<option value="Febrero">Febrero
+								<option value="Marzo">Marzo
+								<option value="Abril">Abril
+								<option value="Mayo">Mayo
+								<option value="Junio">Junio
+								<option value="Julio">Julio
+								<option value="Agosto">Agosto
+								<option value="Septiembre">Septiembre
+								<option value="Octubre">Octubre
+								<option value="Noviembre">Noviembre
+								<option value="Diciembre">Diciembre
+							</select>
+							Teclea año de nacimiento..:<input type="number" name="año_nac" size="4" min="1" max="31"><br><br>
+							
+							Selecciona El curso..:
+							<select name="cursos">
+								<option value="prim_smx">Primero SMX
+								<option value="seg_smx">Segundo SMX
+								<option value="prim_dam">Primero DAM
+								<option value="seg_dam">Segundo DAM
+								<option value="prim_ASIR">Primero ASIR
+								<option value="seg_ASIR">Segundo ASIR
+							</select>
+							
+							</p>
+							
+							<hr>
+							
+							<p>
+							
+								Elige 3 materias optativas
+								<input type="checkbox" name="opt">Ingles
+								<input type="checkbox" name="opt">Frances
+								<input type="checkbox" name="opt">Deporte
+								<input type="checkbox" name="opt">Astronomia
+								<input type="checkbox" name="opt">Historia
+								<input type="checkbox" name="opt">Paginas Web
+								<input type="checkbox" name="opt">Redes
+							
+							</p>
+							
+							<hr>
+							
+							<p>
+							
+								Selecciona el turno
+								<input type="radio" name="turn">Diurno
+								<input type="radio" name="turn">Nocturno
+								<input type="radio" name="turn">Vespertino
+							
+							
+							
+							</p>
+				
+					
+						<hr>
+						<br>
+						<p align="center">
+							<input type="submit" value=" Enviar datos " name="Enviar">
+							<input type="reset" value=" Limpiar datos " name="Limpiar">
+							<input type="button" value="Close this window" onclick="self.close()">
+							<input type="button" value=" Formulario anterior " onclick="location='Index.html'" name="anterior">
+							<input type="button" value=" Siguiente Formulario " onclick="location='../ActividadPropuesta2_8/Index.html'" name="siguiente">
+						</p>
+					</form>
+			
+				</td>
+			</tr>
+	
+		</table>
+		
+	</body>
+
+</html>
