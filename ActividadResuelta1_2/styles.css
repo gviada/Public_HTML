@@ -1,0 +1,68 @@
+
+*
+{
+margin: 0px;
+padding: 0px; }
+
+
+body {
+	background: #ffffff url(images/back_all.gif) ;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #333333; }
+
+#content
+{
+	margin: 0 auto;
+	background: #ffffff;
+	width: 860px; }
+
+
+#centro
+{ background: white;
+  padding:10px;
+}
+
+#centro h2 { 
+	color: #73A462;  text-align: center; 
+	padding-top:20px;
+	padding-bottom:10px;
+	
+}
+
+#centro table {
+  width: 700px;
+  border: 1px solid #F7CE4A;
+  border-collapse:collapse;
+  text-align: center;
+  font-family:arial;
+  margin: auto;
+}
+#centro table th, #centro table td {
+  border: 1px solid #F7CE4A;
+  padding: 5px 5px 5px 5px; 
+}
+#centro table td {
+  background: #FFFF99;
+}
+
+#centro table th
+  { font-weight:bold; background: #CCFF00;}
+
+#centro table td:hover {
+  background: #F7CE4A;
+}
+
+#pie {
+	height: 40px;
+	clear: both;
+	padding-top: 20px;
+	background: url(images/header_top.gif) repeat-x;
+}
+
+#pie p {
+	margin: 0;
+	font-size: 10px;
+	text-align: center;
+	color: #8E8E8E;
+}
+
