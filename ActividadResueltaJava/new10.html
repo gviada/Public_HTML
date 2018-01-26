@@ -1,0 +1,75 @@
+<html>
+<head>
+
+	<title>
+	Resuelta 10
+	</title>
+
+	<script type="text/javascript">
+		
+		//variables
+		var nota;
+		var calificacion = " ";
+		
+		//Insertar Numeros
+		
+		nota = parseInt(prompt("Introduzca la nota del alumno: ", 0));
+		nota = Math.round(nota); //redondea numeros a enteros
+		
+		//aritmetica
+		
+		
+		
+		//Logica
+		
+		
+		
+		//Estructuras de control
+		
+		if (nota >= 0 && nota <= 10){
+		
+			switch(nota)
+				{
+				
+				case 5:
+					calificacion = "suficiente";
+					break;
+				
+				case 6:
+					calificacion = "bien";
+					break;
+				
+				case 7:
+				case 8:
+					calificacion = "Notable";
+					break;
+				
+				
+				case 9:
+				case 10:
+					calificacion = "Excelente";
+					break;
+					
+				default:
+					calificacion = "Suspenso";
+				};
+		
+		}
+		else
+		{
+		
+		calificacion = "Nota erronea";
+		
+		}
+		
+		
+		//Display
+		
+		alert(calificacion);
+		
+		
+	</script>
+	
+</head>
+
+<body>

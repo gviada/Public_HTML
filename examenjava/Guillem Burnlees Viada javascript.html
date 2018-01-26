@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<title>Guillem Burnlees Viada</title>
+		
+		<script>
+		
+		//variables
+		
+		var nombre;
+		var depart;
+		var boni = 0;
+		var sal = 0;
+		var salT = 0;
+		var disdepart;
+		var medsal;
+		var sumsal = 0;
+		
+		
+		
+		document.write("<h2>Tabla de Empleados</h2><br>");
+		
+		document.write("<table border=1><tr bgcolor='color'><td>NOMBRE</td><td>DEPARTAMENTOS</td><td>SALARIO BASE</td><td>BONIFICACIÓN</td><td>SALARIO TOTAL</td></tr>");
+		
+		//empieza el contador
+		
+		for (count = 1; count <= 3; count = count + 1)
+		
+		{
+		
+			//introduce el nombre del trabajador
+			//document.write("<tr><td>NOMBRE</td><td>DEPARTAMENTOS</td><td>SALARIO BASE</td><td>BONIFICACIÓN</td><td>SALARIO TOTAL</td></tr>");
+			nombre = prompt("Introduzca el nombre del empleado: ");
+			
+			//introduce y comprueba el departamento
+			
+			do {
+			
+				depart = prompt("Introduzca INF para departamento informatica o RRHH para departamento de Recursos Humanos: ");
+				
+				if (depart !== "INF" && depart !== "RRHH" && depart !== "inf" && depart !== "rrhh"){
+				
+					alert("El departamento introducido es incorrecto, vuelva a intentarlo.");
+				
+				}
+				
+				else {
+				
+					switch(depart){
+					
+						case "INF": disdepart = "<b>Informatica</b>"; sal = 1500; break;
+						case "inf": disdepart = "<b>Informatica</b>"; sal = 1500; break;
+						case "rrhh": disdepart = "<b>Recursos Humanos</b>"; sal = 1200; break;
+						case "RRHH": disdepart = "<b>Recursos Humanos</b>"; sal = 1200; break;
+						default: "Error en el departamento introducido.";
+					
+					
+					}
+				
+				}
+			
+			
+			}
+			while(depart !== "INF" && depart !== "RRHH" && depart !== "inf" && depart !== "rrhh");
+			
+			//introducir la bonificación
+			
+			boni = parseInt(prompt("Introduzca, numericamente, la bonificacion: "));
+			
+			//establecer el salario que toca y sumarle la bonificación
+			
+			if (depart == "INF" || depart == "inf"){
+			
+				salT = 1500+boni;
+				sumsal = sumsal+salT;
+			
+			}
+			
+			else if (depart == "RRHH" || depart == "rrhh") {
+			
+				salT = 1200+boni;
+				sumsal = sumsal+salT;
+			
+			}
+			
+			//display
+			
+			document.write("<tr><td>" + nombre + "</td><td>" + disdepart + "</td><td>" + sal + "€</td><td>" + boni + "€</td><td>" + salT + "€</td></tr>");
+			
+			//aritmetica
+			
+
+			
+			
+		//debugging
+		
+		//document.write("DEBUGGIN<br>");
+		//document.write("nombre: " + nombre + "<br>");
+		//document.write("depar: " + depart + "<br>");
+		//document.write("disdepart: " + disdepart + "<br>");
+		//document.write("boni: " + boni + "<br>");
+		//document.write("sal: " + sal + "<br>");
+		//document.write("salT: " + salT + "<br>");
+		
+		} //fin del FOR
+		
+		medsal = sumsal/3;
+		
+		document.write("</table>");
+		
+		document.write("<br>La media de salarios es de: " + medsal + "€");
+		</script>
+		
+		
+	</head>
+
+	<body>
+		
+		
+		
+	</body>
+
+</html>
